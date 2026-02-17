@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Travel Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+  <div class="logo">TRIPSENSE</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#planner">Plan Trip</a></li>
+    <li><a href="#">Destinations</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+<section class="hero">
+  <h2>Discover Your Next Adventure</h2>
+  <p>Tell us your budget, mood and days — we create your travel plan</p>
+  <button onclick="document.getElementById('planner').scrollIntoView()">Plan My Trip</button>
+</section>
+
+<section id="planner" class="planner">
+  <h2>Travel Planner</h2>
+  <input type="text" id="city" placeholder="Enter City">
+  <input type="number" id="budget" placeholder="Enter Budget ₹">
+  <input type="number" id="days" placeholder="Number of Days">
+  <select id="mood">
+    <option>Relax</option>
+    <option>Adventure</option>
+    <option>Spiritual</option>
+    <option>Food</option>
+  </select>
+  <button onclick="generatePlan()">Generate My Plan</button>
+
+  <div id="result"></div>
+</section>
+
+<footer>
+  <p>© 2026 Tripsense | Designed by Kunal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
